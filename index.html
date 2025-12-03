@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Elite league</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- Local CSS (relative to index.html) -->
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./aboutus.css" />
+    <link rel="stylesheet" href="./landing_page.css" />
+    <link rel="stylesheet" href="./style2.css" />
+    <link rel="stylesheet" href="./style3.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Montserrat:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="text-white">
+    <!-- =========================================================
+         HEAD SECTION (navbar)
+         ========================================================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./src/logo-top.png"
+            alt="Logo"
+            style="height: 60px; cursor: pointer"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#why">WHY PARTICIPATING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#agenda">AGENDA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#mentors">MENTORS</a>
+            </li>
+          </ul>
+
+          <a class="rigester text-decoration-none btn btn-primary px-4 mx-3">
+            Register
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- =========================================================
+         HEAD SECTION (hero)
+         ========================================================= -->
+    <section class="head-section mt-2">
+      <div
+        class="d-flex pt-5"
+        style="
+          background-image: url('./src/headP/Group.png');
+          background-size: cover;
+          background-position: center;
+          position: relative;
+        "
+      >
+        <div
+          class="arrow position-absolute"
+          style="
+            top: -10%;
+            right: 10%;
+            transform: translateX(-50%);
+            margin-bottom: 16px;
+          "
+        >
+          <img
+            class="lampa"
+            style="width: 300px; height: 300px"
+            src="./src/lampa.svg"
+            alt="Light bulb"
+          />
+        </div>
+
+        <div
+          class="char position-relative w-100 bottom-0"
+          style="height: 600px"
+        >
+          <div
+            class="headtitle mx-auto d-flex flex-column w-50 justify-content-center"
+          >
+            <div class="title text-center">THE ELITE</div>
+            <div class="subtitle text-center">LEAGUE</div>
+
+            <div class="tutu d-block d-md-none">
+              <div
+                class="place-of d-flex flex-row align-items-center text-center mt-4"
+              >
+                <img src="./assets/locate.png" class="me-2" />
+                <p class="mb-0">ESI - OUED SEMMAR</p>
+              </div>
+              <div
+                class="date-of d-flex flex-row align-items-center text-center mt-4"
+              >
+                <img src="./assets/clock.png" class="me-4" />
+                <p class="mb-0">22-24 January 2026</p>
+              </div>
+            </div>
+
+            <div class="titleBtn d-flex justify-content-center mt-4">
+              <a class="rigester btn btn-primary px-6 me-3">Register</a>
+              <a class="showMore btn btn-secondary px-6 me-3">Show More</a>
+            </div>
+          </div>
+
+          <!-- Blue - Bottom Left -->
+          <img
+            src="./src/headP/among_us_character_blue 1.png"
+            class="chart position-absolute character-img"
+            style="left: 5%; bottom: 70%; width: 100px"
+            alt="Blue"
+          />
+
+          <!-- Pink - Bottom Center Left -->
+          <img
+            src="./src/headP/among_us_character_pink 1.png"
+            class="chart position-absolute character-img"
+            style="left: 20%; bottom: 30%; width: 60px"
+            alt="Pink"
+          />
+
+          <!-- Green - Top Center -->
+          <img
+            src="./src/headP/among_us_character_green 1.png"
+            class="chart position-absolute character-img"
+            style="left: 30%; top: 0%; width: 45px; transform: translateX(-50%)"
+            alt="Green"
+          />
+
+          <!-- Purple - Top Right -->
+          <img
+            src="./src/headP/among_us_character_purple 1.png"
+            class="chart position-absolute character-img"
+            style="right: 10%; top: 15%; width: 65px"
+            alt="Purple"
+          />
+
+          <!-- Red - Bottom Right -->
+          <img
+            src="./src/headP/among_us_character_red 1.png"
+            class="chart position-absolute character-img"
+            style="right: 15%; bottom: 20%; width: 85px"
+            alt="Red"
+          />
+        </div>
+
+        <div
+          class="arrow position-absolute d-none d-lg-block"
+          style="
+            bottom: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: 16px;
+          "
+        >
+          <img
+            style="width: 100px; height: 100px"
+            src="./src/arrow.png"
+            alt="Down arrow"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         ABOUT THE EVENT
+         ========================================================= -->
+    <section class="hero-section mt-4" id="about">
+      <div class="gradient-circle circle-1"></div>
+      <div class="gradient-circle circle-2"></div>
+      <div class="gradient-circle circle-3"></div>
+
+      <div class="content">
+        <header class="header">
+          <h1>ABOUT THE EVENT</h1>
+          <p>
+            A 3 DAY TECH HACKATHON WHERE THE SMARTEST, FASTEST, AND MOST
+            CREATIVE MINDS COLLIDE. THE ELITE LEAGUE HACKATHON IS YOUR CHANCE TO
+            BUILD, COMPETE, AND STAND OUT AMONG THE BEST.
+          </p>
+        </header>
+
+        <!-- Top feature cards -->
+        <div class="cards-container">
+          <!-- CARD 1 -->
+          <article class="card">
+            <img
+              src="./assets/among_us_character_red.svg"
+              class="among-us-char"
+              alt="Red crew character"
+            />
+            <div class="card-header">
+              <div class="card-icon">
+                <img src="./assets/iconn.png" alt="Icon for Epic Days" />
+              </div>
+              <h3>EPIC DAYS</h3>
+            </div>
+            <div class="card-content">
+              <p>3-DAY OF ADVENTURE, EXPLORE AND COMPETITION</p>
+            </div>
+          </article>
+
+          <!-- CARD 2 -->
+          <article class="card">
+            <img
+              src="./assets/among_us_character_blue.svg"
+              class="among-us-char"
+              alt="Blue crew character"
+            />
+            <div class="card-header">
+              <div class="card-icon">
+                <img src="./assets/iconn2.png" alt="Icon for participants" />
+              </div>
+              <h3>PARTICIPANTS</h3>
+            </div>
+            <div class="card-content">
+              <p>ELITE LEAGUE SEARCH ONLY FOR STUDENTS WITH WINNING MINDSET</p>
+            </div>
+          </article>
+
+          <!-- CARD 3 -->
+          <article class="card">
+            <img
+              src="./assets/among_us_character_orange.svg"
+              class="among-us-char"
+              alt="Orange crew character"
+            />
+            <div class="card-header">
+              <div class="card-icon">
+                <img src="./assets/iconn3.png" alt="Icon for prizes" />
+              </div>
+              <h3>WIN PRIZES</h3>
+            </div>
+            <div class="card-content">
+              <p>ALL TEAMS ARE COMPETE BUT ONLY THE BEST IS THE ELITE TEAM</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Stats row -->
+        <div class="stats-container">
+          <div class="stat-box">
+            <div class="stat-number">3</div>
+            <div class="stat-label">DAYS</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">PARTICIPANT</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">MENTOR</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">3</div>
+            <div class="stat-label">PRICES</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         WHY PARTICIPATE
+         ========================================================= -->
+    <section class="why-section mt-4" id="why">
+      <div class="content">
+        <header class="why-header">
+          <h2 class="why-title">WHY PARTICIPATE ?</h2>
+          <p class="why-subtitle">
+            THIS ISN'T JUST ANOTHER HACATHON EVENT—IT'S AN OPPORTUNITY TO BE
+            PART OF SOMETHING LEGENDARY
+          </p>
+        </header>
+
+        <h3 class="elite-title">THE ELITE TEAM MEMBERS</h3>
+
+        <div class="team-grid">
+          <!-- LEADER -->
+          <article class="team-card">
+            <div class="team-header">
+              <div class="team-icon">
+                <img src="./assets/icon-leader.png" alt="Leader role icon" />
+              </div>
+              <h4 class="team-title">THE LEADER</h4>
+            </div>
+            <p class="team-text">KEEPS THE CREW ALIGNED AND MOVING.</p>
+          </article>
+
+          <!-- PROBLEM PROPOSALS -->
+          <article class="team-card">
+            <div class="team-header">
+              <div class="team-icon">
+                <img
+                  src="./assets/icon_prob_prp.png"
+                  alt="Problem proposals role icon"
+                />
+              </div>
+              <h4 class="team-title">PROBLEM PROPOSELS</h4>
+            </div>
+            <p class="team-text">
+              DESIGN TOUGH, MEANINGFUL CHALLENGES TO SOLVE.
+            </p>
+          </article>
+
+          <!-- PROBLEM SOLVERS -->
+          <article class="team-card">
+            <div class="team-header">
+              <div class="team-icon">
+                <img
+                  src="./assets/icon_prob_sol.png"
+                  alt="Problem solvers role icon"
+                />
+              </div>
+              <h4 class="team-title">PROBLEM SOLVERS</h4>
+            </div>
+            <p class="team-text">TURN IDEAS INTO WORKING SOLUTIONS FAST.</p>
+          </article>
+
+          <!-- IMPOSTER -->
+          <article class="team-card">
+            <div class="team-header">
+              <div class="team-icon">
+                <img src="./assets/icon_impo.png" alt="Imposter role icon" />
+              </div>
+              <h4 class="team-title">THE IMPOSTER</h4>
+            </div>
+            <p class="team-text">IS BETWEEN ALL OF YOU, BUT WHO?</p>
+          </article>
+        </div>
+
+        <div class="why-footer">
+          <p class="why-more-text">U ARE INTRESTED, LET'S SEE MORE</p>
+          <button class="btn-see-more" type="button">See More</button>
+        </div>
+
+        <div class="crew-pills">
+          <img src="./assets/among_us.png" alt="Among Us Crew" />
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         EVENT AGENDA
+         ========================================================= -->
+    <section class="agenda-section mt-4" id="agenda">
+      <div class="content">
+        <img class="char d-none d-md-block" src="./src/agendaSrc/orang.png" />
+        <img class="char2 d-none d-md-block" src="./src/agendaSrc/green.png" />
+        <img
+          class="glowing1 d-none d-lg-block"
+          src="./src/agendaSrc/glow.png"
+        />
+        <img
+          class="glowing2 d-none d-lg-block"
+          src="./src/agendaSrc/glow.png"
+        />
+
+        <div class="agendaTitle d-flex justify-content-center">
+          <div class="mx-auto pt-5 d-flex flex-column w-50">
+            <div class="agendaTitleMain text-center">EVENT AGENDA</div>
+            <div class="text-center">
+              <h5>
+                Three action-packed days of competition, learning, and
+                networking
+              </h5>
+            </div>
+            <div
+              class="timeline d-flex flex-row justify-content-center align-items-center mt-4"
+            >
+              <div
+                class="day d1 d-flex justify-content-center text-center flex-column"
+              >
+                <a class="date text-decoration-none">15 DECEMEBER 2025</a>
+                <a>DAY 1</a>
+              </div>
+              <div
+                class="day d2 d-flex justify-content-center text-center flex-column"
+              >
+                <a class="date text-decoration-none">16 DECEMEBER 2025</a>
+                <a>DAY 2</a>
+              </div>
+              <div
+                class="day d3 d-flex justifyцентр text-center flex-column"
+              >
+                <a class="date text-decoration-none">17 DECEMEBER 2025</a>
+                <a>DAY 3 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="agenda-timing">
+          <!-- all clock images use the same path -->
+          <!-- repeat blocks unchanged except for src path -->
+          <!-- example of one block: -->
+          <div
+            class="details d-flex justify-content-center flex-column align-items-center mt-5"
+          >
+            <div class="event d-flex flex-row justify-content-center">
+              <a class="clock d-flex flex-column align-items-center">
+                <img
+                  src="./src/agendaSrc/clock.png"
+                  alt="clock"
+                  class="clock-img"
+                />
+              </a>
+
+              <div class="event-details">
+                <div class="event-header">
+                  <span class="event-time">8:30 am</span>
+                  <span class="event-label general">General</span>
+                </div>
+
+                <span class="event-title">WELCOME & check in .</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- (keep all later agenda items identical to your original,
+               just make sure each clock src uses ./src/agendaSrc/clock.png ) -->
+
+          <!-- ... all other agenda items here, unchanged except for ./src/... -->
+
+        </div>
+
+        <div class="end-logo-agenda d-flex justify-content-end">
+          <img src="./src/agendaSrc/frame.png" alt="Agenda frame" />
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         OUR SPONSORS
+         ========================================================= -->
+    <section class="sponsors-section">
+      <div class="sponsors-glow-yellow"></div>
+
+      <img
+        src="./assets/character_red2.svg"
+        alt="Red crew character"
+        class="sponsors-character"
+      />
+
+      <div class="sponsors-pills">
+        <img src="./assets/among_us.png" alt="Among Us Crew" />
+      </div>
+
+      <div class="content">
+        <h2 class="sponsors-title">OUR SPONSORS</h2>
+
+        <div class="sponsors-grid">
+          <article class="sponsor-card">
+            <div class="sponsor-name">
+              <img
+                src="./assets/pictures/Logo_Djezzy_2015-removebg-preview 1.png"
+                alt="Djezzy Logo"
+              />
+            </div>
+            <div class="sponsor-role">DJEZZY</div>
+          </article>
+
+          <article class="sponsor-card">
+            <div class="sponsor-name">
+              <img
+                src="./assets/pictures/cybears logo.png"
+                alt="cyber bears Logo"
+              />
+            </div>
+            <div class="sponsor-role">CYBERBEARS</div>
+          </article>
+
+          <article class="sponsor-card">
+            <div class="sponsor-name">
+              <img
+                src="./assets/pictures/images-Photoroom 1.png"
+                alt="Connectech Logo"
+              />
+            </div>
+            <div class="sponsor-role">Connectech</div>
+          </article>
+
+          <article class="sponsor-card">
+            <div class="sponsor-name">
+              <img
+                src="./assets/pictures/it_solutions-Photoroom 1.png"
+                alt="IT Solutions Logo"
+              />
+            </div>
+            <div class="sponsor-role">IT SOLUTION</div>
+          </article>
+        </div>
+
+        <div class="sponsors-cta">
+          <p class="sponsors-question">INTRESTED IN SPONSORING ?</p>
+          <button class="btn-sponsor" type="button">Become Sponsor</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         OUR MENTORS
+         ========================================================= -->
+    <section class="our-mentors" id="mentors">
+      <div id="ourMentors">
+        <div id="blurPurple" class="neon"></div>
+        <h2 id="ourMentorsH2" class="autoShow">OUR MENTORS</h2>
+        <p id="smplTxt" class="autoShow">
+          Get personalized guidance from seasoned professionals who will <br />
+          help you level up your problms
+        </p>
+
+        <div id="rdMentor" class="autoShow">
+          <center>
+            <img id="rdMentorImg" src="./assets/pictures/ABD.png" alt="" />
+            <h3 id="rdMentorH3">Hammani Abdeslem</h3>
+            <p id="rdMentorP">
+              4th year DAta science student at esi algiers Backend developer
+            </p>
+            <button id="rdDepartementBtn">ex Cse Vice president</button>
+          </center>
+        </div>
+
+        <div id="stMentor" class="autoShow">
+          <center>
+            <img id="stMentorImg" src="./assets/pictures/issam.png" alt="" />
+            <h3 id="stMentorH3">BOUSSEBATA ISSAM</h3>
+            <p id="stMentorP">
+              5th year System d'information et technologie student at esi
+              algiers , Frontend  developer Works at Ourquilane
+            </p>
+            <button id="stDepartementBtn"> ex Cse president</button>
+          </center>
+        </div>
+
+        <div id="ndMentor" class="autoShow">
+          <center>
+            <img id="ndMentorImg" src="./assets/pictures/yasmine.png" alt="" />
+            <h3 id="ndMentorH3">ZAIDI YASMINE</h3>
+            <p id="ndMentorP">
+              5th year System d'information et technologie student at esi
+              algiers Fullstack developer Works at Ourquilane
+            </p>
+            <button id="ndDepartementBtn">departement</button>
+          </center>
+        </div>
+      </div>
+    </section>
+
+    <section class="sep"></section>
+
+    <!-- =========================================================
+         REGISTER NOW SECTION
+         ========================================================= -->
+    <section class="regester-section">
+      <div class="Reg_page_top">
+        <div class="corner_logo">
+          <img src="./logo.png" alt="" style="width: 100%; height: 100%" />
+        </div>
+        <div class="titleR">
+          <h1>REGISTER NOW</h1>
+          <p>
+            Get personalized guidance from seasoned professionals who will help
+            you level up
+          </p>
+          <p>your game</p>
+        </div>
+      </div>
+
+      <div class="Reg_page_bottom">
+        <form>
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter your name" />
+
+          <label>Email</label>
+          <input type="email" placeholder="Enter your email" />
+
+          <label>Phone Number</label>
+          <input type="text" placeholder="Enter your number" />
+
+          <label>Country</label>
+          <input type="text" placeholder="Enter your country" />
+
+          <label>Experience Level</label>
+          <input type="text" placeholder="Beginner / Intermediate / Expert" />
+
+          <label>Your Goal</label>
+          <input type="text" placeholder="Tell us why you want to join" />
+          <button class="submitR">Submit</button>
+        </form>
+
+        <div class="info_card">
+          <img src="./info_card.png" alt="" style="width: 100%; height: 100%" />
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         ABOUT CSE
+         ========================================================= -->
+    <section class="aboutus_section mt-5">
+      <header class="aboutus_header">About CSE</header>
+
+      <div class="frame"></div>
+
+      <div class="aboutus_container">
+        <div class="aboutus_content">
+          <img src="./logo.png" alt="CSE logo" />
+
+          <p>
+            One of biggest Scientific club in Algeria . CSE since 2008 aims to
+            create original and helpful content for tech enthusiasts , from
+            Hackathons and Workshops to courses and social media news and events
+          </p>
+        </div>
+        <button class="JOIN_CSE_btn" type="button">JOIN CSE</button>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
